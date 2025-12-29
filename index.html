@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>OAuth Test Page</title>
+</head>
+<body>
+  <h1>OAuth 動作確認ページ</h1>
+  <p>認証リダイレクト後のクエリパラメータを console に出力します</p>
+
+  <script>
+    // 現在のURLのクエリパラメータをログ出力
+    console.log("Query Params:", Object.fromEntries(new URLSearchParams(location.search)));
+
+    // 必要ならlocalStorageやsessionStorageに保存してもOK
+    // localStorage.setItem("oauth_debug", location.search);
+  </script>
+</body>
+</html>
